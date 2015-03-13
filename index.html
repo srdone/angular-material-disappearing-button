@@ -4,48 +4,11 @@
   <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/angular_material/0.8.2/angular-material.min.css">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body ng-cloak ng-controller="AppCtrl" layout="row">
+<body ng-controller="AppCtrl" layout="column">
 
 
-<md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="$mdMedia('gt-md')" md-swipe-left="toggleSidenav()">
-  <md-toolbar>
-    <h1 class="md-toolbar-tools">Test</h1>
-  </md-toolbar>
+<div ng-view></div>
 
-  <md-content flex layout="column">
-    <md-button>
-      Troop
-    </md-button>
-    <md-button>
-      Logout
-    </md-button>
-    <md-button ng-if="!$mdMedia('gt-md')" ng-click="toggleSidenav()">
-      Close Menu
-    </md-button>
-  </md-content>
-</md-sidenav>
-
-
-<div layout="column" tabindex="-1" flex role="main" class="main">
-  <md-toolbar>
-
-    <div class="md-toolbar-tools" ng-click="toggleSidenav()" layout="row" flex>
-      <md-button hide-gt-md aria-label="Toogle Menu">
-        <md-icon md-svg-src="bower_components/material-design-icons/navigation/svg/production/ic_menu_48px.svg"></md-icon>
-      </md-button>
-
-      <div class="md-toolbar-item md-breadcrumb" hide-gt-md>
-        First Class Scouting
-      </div>
-
-      <span flex></span>
-
-    </div>
-  </md-toolbar>
-
-  <md-content md-scroll-y ng-view class="md-padding" layout-fill></md-content>
-
-</div>
 <!-- Angular Material Dependencies -->
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.6/angular.min.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.6/angular-route.min.js"></script>

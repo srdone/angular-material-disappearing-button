@@ -1,15 +1,29 @@
-<md-content layout="column" class="md-padding" layout-fill>
-  <md-button class="md-button md-raised md-accent test">
-    <md-icon md-svg-src="./aid.svg"></md-icon>
+<div>
+
+
+  <md-content>
+    <md-list>
+      <md-item ng-repeat="item in [1]">
+        <md-item-content>
+          <div class="md-tile-content">
+            {{item}}
+          </div>
+        </md-item-content>
+        <md-divider></md-divider>
+      </md-item>
+    </md-list>
+  </md-content>
+  <md-button class="md-primary md-fab md-fab-bottom-left">
+    <md-icon icon="https://material.angularjs.org/img/icons/ic_photo_24px.svg"></md-icon>
+  </md-button>
+  <md-button class="md-primary md-fab md-fab-top-left">
+    <md-icon icon="https://material.angularjs.org/img/icons/ic_photo_24px.svg"></md-icon>
+  </md-button>
+  <md-button class="md-primary md-fab md-fab-bottom-right">
+    <md-icon icon="https://material.angularjs.org/img/icons/ic_photo_24px.svg"></md-icon>
+  </md-button>
+  <md-button class="md-primary md-fab md-fab-top-right">
+    <md-icon icon="https://material.angularjs.org/img/icons/ic_photo_24px.svg"></md-icon>
   </md-button>
 
-  <md-card>
-    <md-toolbar>
-      A Toolbar
-    </md-toolbar>
-    <md-card-content>
-      Card Content
-    </md-card-content>
-  </md-card>
-
-</md-content>
+</div>
